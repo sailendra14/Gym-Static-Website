@@ -6,29 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Fitness</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&display=swap" rel="stylesheet">
     <style>
         body {
             color: white;
             margin: 0px;
             padding: 0px;
-            background: url('/images/bg.png');
+            background: url('/images/abs-1850926_1920.jpg');
+            font-family: 'Chakra Petch', sans-serif;
         }
 
         .left {
             display: inline-block;
             font-size: 25px;
             position: absolute;
-            top: 38px;
-            left: 30px;
+            top: 21px;
+            left: 63px;
         }
 
         .left a {
+           /* border: 2px solid snow; */
             font-size: 40px;
             text-decoration: none;
+            color: rgb(78, 231, 85);
         }
 
         .left a:hover {
-            color: rgb(12, 11, 11);
+            color: rgb(238, 229, 229);
 
         }
 
@@ -36,17 +40,30 @@
             display: block;
             width: 45%;
             margin: 20px auto;
-            border: 2px solid rgb(31, 172, 197);
+           /* border: 2px solid rgb(31, 172, 197); */
 
         }
 
         .right {
             position: absolute;
-            top: 38px;
-            right: 30px;
+            top: 29px;
+            right: 46px;
             font-size: 25px;
             display: inline-block;
-            border: 2px solid rgb(241, 7, 234);
+           /* border: 2px solid rgb(241, 7, 234);*/
+        }
+
+        .btn {
+            font-family: 'Chakra Petch', sans-serif;
+            margin: 0px 0px;
+            padding: 7px 4px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: rgb(216, 208, 208);
+            color: rgb(81, 146, 37);
         }
 
         .navbar {
@@ -65,8 +82,35 @@
         }
 
         .navbar li a:hover {
-            color: rgb(12, 11, 11);
+            color: rgb(81, 146, 37);
 
+        }
+
+        .container {
+            border: 2px solid gainsboro;
+            margin: 99px 58px;
+            padding: 18px 51px;
+            border-radius: 4px;
+            width: 33%;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 382px;
+            padding: 1px;
+            border: 2px solid gold;
+            margin: 11px auto;
+            font-size: 24px;
+            border-radius: 8px;
+        }
+        .container h2{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 88%;
+            margin: 20px auto;
         }
     </style>
 </head>
@@ -90,9 +134,38 @@
 
         <div class="right">
             <!-- right box for buttons  -->
-            Im right
+            <a href=""><button class="btn">Call us now</button></a>
+            <a href=""> <button class="btn">Email now</button></a>
         </div>
     </header>
+
+    <div class="container">
+        <h2>Join the Best Gym of Delhi now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
 </body>
 
 </html>
