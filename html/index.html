@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Fitness</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('/images/bg.png');
+        }
+
+        .left {
+            display: inline-block;
+            font-size: 25px;
+            position: absolute;
+            top: 38px;
+            left: 30px;
+        }
+
+        .left a {
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        .left a:hover {
+            color: rgb(12, 11, 11);
+
+        }
+
+        .mid {
+            display: block;
+            width: 45%;
+            margin: 20px auto;
+            border: 2px solid rgb(31, 172, 197);
+
+        }
+
+        .right {
+            position: absolute;
+            top: 38px;
+            right: 30px;
+            font-size: 25px;
+            display: inline-block;
+            border: 2px solid rgb(241, 7, 234);
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            font-size: 25px;
+        }
+
+        .navbar li a:hover {
+            color: rgb(12, 11, 11);
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <a href="/html/index.html">SAIFITNESS</a>
+        </div>
+
+        <div class="mid">
+            <!-- mid box for menu  -->
+            <ul class="navbar" class="active">
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <!-- right box for buttons  -->
+            Im right
+        </div>
+    </header>
 </body>
+
 </html>
